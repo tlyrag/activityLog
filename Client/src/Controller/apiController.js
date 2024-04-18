@@ -5,7 +5,7 @@ const getBackAPI = () => {
     if(environment=== "local") {
         return "http://localhost:5000"
     } 
-    return "https://activity-dmy0q0v98-tlyrags-projects.vercel.app/"
+    return "https://activitylog.onrender.com"
 }
 
 const getActivities = () => {
