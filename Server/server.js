@@ -2,8 +2,8 @@ const express = require('express');
 const cors = require('cors');
 const mongoose = require('mongoose');
 require('dotenv').config();
-
-// require('dotenv').config();
+/// Creating build path for deployment
+const path = require('path')
 
 const app = express();
 const port = process.env.PORT || 5000;
@@ -14,6 +14,7 @@ console.log(uri);
 app.use(cors());
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
+app.use(express.static(path.join(__dirname, 'build')));
 
 mongoose.connect(uri
 );

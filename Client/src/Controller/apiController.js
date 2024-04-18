@@ -1,11 +1,11 @@
-const environment = "local"
+const environment = ""
 
 const getBackAPI = () => {
     
     if(environment=== "local") {
         return "http://localhost:5000"
     } 
-    return ""
+    return "https://activity-dmy0q0v98-tlyrags-projects.vercel.app/"
 }
 
 const getActivities = () => {
