@@ -6,7 +6,7 @@ require('dotenv').config();
 const path = require('path')
 
 const app = express();
-const port = process.env.PORT || 5000;
+const port = process.env.PORT || 3000;
 
 const uri = process.env.DBRUI || "mongodb+srv://test:test@cluster0.l1n3kls.mongodb.net/";
 console.log(uri);
